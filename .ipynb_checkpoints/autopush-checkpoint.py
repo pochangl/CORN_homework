@@ -6,9 +6,6 @@ from contextlib import suppress
 def has_changed():
     with suppress(subprocess.CalledProcessError):
         output = subprocess.check_output(['git', 'diff'])
-        if output:
-            return output
-        output = subprocess.check_output(['git', 'diff', '--staged'])
         return output
 
 
