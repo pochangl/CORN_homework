@@ -5,10 +5,7 @@ from contextlib import suppress
 
 def has_changed():
     with suppress(subprocess.CalledProcessError):
-        output = subprocess.check_output(['git', 'diff'])
-        if output:
-            return output
-        return subprocess.check_output(['git', 'diff', '--staged'])
+        return subprocess.check_output(['git', 'diff']) or subprocess.check_output(['git', 'diff', '--staged'])
 
 
 def upload():
