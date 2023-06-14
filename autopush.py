@@ -8,8 +8,7 @@ def has_changed():
         output = subprocess.check_output(['git', 'diff'])
         if output:
             return output
-        output = subprocess.check_output(['git', 'diff', '--staged'])
-        return output
+        return subprocess.check_output(['git', 'diff', '--staged'])
 
 
 def upload():
