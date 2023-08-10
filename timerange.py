@@ -12,7 +12,6 @@ app.layout = html.Div(children = [
     dcc.Dropdown(id='dropdown')
 ])
 
-
 @app.callback(
     Output('picker', 'max_date_allowed'),
     Input('picker', 'min_date_allowed'),
