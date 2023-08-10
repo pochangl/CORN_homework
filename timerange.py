@@ -19,5 +19,10 @@ app.layout = html.Div(children = [
 def init_end_date(_):
     return datetime.datetime.now().date()
 
+@app.callback(
+    Input('picker', 'start_date'),
+    Input('picker', 'end_date'),
+)
+
 
 app.run(debug=True)
