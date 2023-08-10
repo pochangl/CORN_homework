@@ -18,7 +18,7 @@ app.layout = html.Div(children = [
     Input('picker', 'min_date_allowed'),
     Input('dropdown', 'value'),
 )
-def init_end_date(_):
+def init_end_date(picker, dropdown):
     return datetime.datetime.now().date()
 
 @app.callback(
