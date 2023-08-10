@@ -24,8 +24,12 @@ def on_click(n_clicks):
     Output('output', 'children'),
     Input('button2', 'n_clicks'),
     State('dropdown1', 'value'),
+    prevent_initial_call=True,
 )
 def on_load(n_clicks, dropdown_value):
+    if not dropdown_value:
+        return '沒選'
+
     return f'選擇了 {dropdown_value}'
 
 
