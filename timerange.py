@@ -23,6 +23,8 @@ def init_end_date(_):
     Input('picker', 'start_date'),
     Input('picker', 'end_date'),
 )
+def on_event(start_date, end_date):
+    pass
 
 
 app.run(debug=True)
