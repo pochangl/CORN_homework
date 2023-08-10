@@ -5,7 +5,7 @@ app = Dash()
 
 app.layout = html.Div(children = [
     dcc.Dropdown(options=[], id='dropdown1'),
-    html.Button(children= '按鈕', id='button', n_clicks=0)
+    html.Button(children='按鈕', id='button', n_clicks=0)
 ])
 
 
@@ -18,4 +18,4 @@ def on_click(n_clicks):
 
 
 
-app.run(debug=False)
+app.run(debug=True)
