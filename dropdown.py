@@ -5,7 +5,7 @@ app = Dash()
 
 app.layout = html.Div(children = [
     dcc.Dropdown(value=[], id='dropdown1'),
-    html.Button(id='button', n_clicks=0)
+    html.Button(children: '按鈕', id='button', n_clicks=0)
 ])
 
 
