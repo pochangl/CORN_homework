@@ -9,14 +9,12 @@ app.layout = html.Div(children = [
         min_date_allowed=datetime.date(year=2023,month=7, day=1),
         max_date_allowed=datetime.date(year=2023, month=8, day=1),
     ),
-    dcc.Dropdown(id='dropdown')
 ])
 
 
 @app.callback(
     Output('picker', 'max_date_allowed'),
     Input('picker', 'min_date_allowed'),
-    Input('dropdown', 'value'),
 )
 def init_end_date(_):
     return datetime.datetime.now().date()
