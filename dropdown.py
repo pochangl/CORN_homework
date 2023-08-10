@@ -10,7 +10,7 @@ app.layout = html.Div(children = [
 
 
 @app.callback(
-    Output('doropdown1', 'options'),
+    Output('dropdown1', 'options'),
     Input('button', 'n_clicks'),
 )
 def on_click(n_clicks):
