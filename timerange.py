@@ -24,6 +24,7 @@ def init_end_date(_):
     Input('picker', 'end_date'),
 )
 def on_event(start_date, end_date):
+    SQL = ''''''
     pass
 
 
