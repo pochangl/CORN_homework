@@ -13,7 +13,7 @@ app.layout = html.Div(children = [
 )
 
 def on_click(n_click):
-    return ['a', 'b', 'c']
+    return ['物件1', '物件2', '物件2']
 
 
 
